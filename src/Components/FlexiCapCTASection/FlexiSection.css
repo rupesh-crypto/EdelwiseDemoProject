@@ -1,0 +1,186 @@
+.flexicap-section{
+padding:80px 0;
+background:#f6f7f8;
+}
+
+.container{
+width:85%;
+margin:auto;
+}
+
+.cta-box{
+display:flex;
+justify-content:space-between;
+background: #EFF7FF;
+box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+border-radius:16px;
+padding:40px;
+margin-bottom:60px;
+}
+
+.cta-left{
+width:45%;
+}
+
+.cta-left h2{
+margin-bottom:10px;
+}
+
+.cta-left p{
+margin-bottom:25px;
+color:#555;
+}
+
+.form input{
+width:100%;
+padding:12px;
+border:1px solid #d5d9de;
+border-radius:8px;
+margin-bottom:14px;
+}
+
+.row{
+display:flex;
+gap:14px;
+}
+
+.cta-buttons{
+
+display:flex;
+gap:14px;
+margin-top:12px;
+
+
+}
+
+.primary{
+width: 217px;
+background:#1c4f9c;
+color:white;
+border:none;
+padding:12px 24px;
+border-radius:8px;
+
+}
+
+.primary:hover{
+background:green;
+}
+
+.secondary{
+    width: 217px;
+background:white;
+border:1px solid #1c4f9c;
+padding:12px 24px;
+border-radius:8px;
+
+}
+
+.secondary:hover{
+    background:#1c4f9c;
+    color: white;
+}
+.cta-right{
+width:45%;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.cta-right img{
+max-width:100%;
+}
+
+.downloads-title{
+margin-bottom:25px;
+}
+
+.downloads-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+
+
+.icon{
+font-size:20px;
+}
+
+
+.download-card{
+position:relative;
+display:flex;
+align-items:center;
+gap:14px;
+padding:18px 20px;
+background:#ffffff;
+border:1px solid #e6e6e6;
+border-radius:10px;
+overflow:hidden;
+}
+
+/* corner shape */
+
+.corner-download{
+position:absolute;
+top:0;
+right:0;
+width:0;
+height:0;
+background:#0f56a6;
+border-bottom-left-radius:70px;
+display:flex;
+align-items:center;
+justify-content:center;
+transition:all .35s ease;
+}
+
+.corner-download img{
+width:20px;
+height:20px;
+opacity:0;
+
+transition:opacity .2s ease;
+}
+
+/* hover animation */
+
+.download-card:hover .corner-download{
+width:50px;
+height:50px;
+}
+
+.download-card:hover .corner-download img{
+opacity:1;
+border-radius: 7px;
+}
+
+
+@media (max-width:810px) {
+     .cta-box{
+flex-direction:column;
+padding:30px;
+text-align:left;
+}
+
+.cta-left{
+width:100%;
+}
+
+.cta-right{
+width:100%;
+margin-top:30px;
+}
+
+.row{
+flex-direction:column;
+}
+
+.cta-buttons{
+flex-direction:row;
+}
+    .downloads-grid{
+        grid-template-columns:1fr;
+    }
+}

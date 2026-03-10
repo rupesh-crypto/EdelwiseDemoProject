@@ -1,0 +1,144 @@
+.fund-details-section{
+  padding:80px 0;
+  background:#f6f7f8;
+}
+
+.fund-details-container{
+  width:82%;
+  margin:auto;
+}
+
+.section-title{
+  font-size:28px;
+  font-weight:600;
+}
+
+.section-subtitle{
+  margin-top:8px;
+  color:#555;
+}
+
+.fund-details-card{
+  background:white;
+  margin-top:30px;
+  padding:40px;
+  border-radius:14px;
+  display:flex;
+  justify-content:space-between;
+  gap:60px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.fund-info,
+.investment-info{
+  width:48%;
+}
+
+.fund-info h3,
+.investment-info h3{
+  margin-bottom:25px;
+}
+
+.info-row{
+  display:flex;
+  justify-content:space-between;
+  padding:14px 0;
+  border-bottom:1px solid #e5e5e5;
+  font-size:14px;
+}
+
+.investment-objective{
+  height: 219px;
+  margin-top:40px;
+  font-weight: 600;
+  background:#184f9b;
+  border-radius: 15px;
+  color:white;
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+}
+
+.objective-left{
+  width:55%;
+}
+.objective-line{
+  width:70px;
+  height:3px;
+  background:#ffffff;
+  border-radius:2px;
+  margin-bottom:18px;
+}
+.objective-left h3{
+  margin-bottom:15px;
+  font-size:24px;
+  border-radius:14px;
+}
+
+.objective-right img{
+  width:240px;
+}
+
+@media (max-width:900px){
+
+.fund-details-card{
+flex-direction:column;
+gap:30px;
+padding:30px;
+}
+
+.fund-info,
+.investment-info{
+width:100%;
+}
+
+.info-row{
+font-size:13px;
+}
+
+
+.investment-objective{
+flex-direction:column;
+height:auto;
+padding:25px;
+text-align:center;
+gap:20px;
+}
+.objective-line{
+  width:67vw;
+  height:3px;
+  background:#ffffff;
+  border-radius:2px;
+
+}
+
+.objective-left{
+width:100%;
+}
+
+.objective-right img{
+width:160px;
+}
+
+}
+
+@media (max-width:480px){
+
+.fund-details-card{
+padding:20px;
+}
+
+.section-title{
+font-size:22px;
+}
+
+.info-row{
+flex-direction:column;
+gap:6px;
+}
+
+.objective-right img{
+width:130px;
+}
+
+}

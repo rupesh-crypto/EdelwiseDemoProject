@@ -1,0 +1,69 @@
+.holdings-section{
+  padding:80px 0;
+  background:#f6f7f8;
+}
+
+.container{
+  width:82%;
+  margin:auto;
+}
+
+.section-title{
+  font-size:24px;
+  font-weight:600;
+  margin-bottom:20px;
+}
+
+.holdings-card{
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.table-header{
+  display:grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  padding:16px 24px;
+  background:#eef2f6;
+  font-weight:600;
+}
+
+.table-row{
+  display:grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  padding:16px 24px;
+  border-bottom:1px solid #eee;
+  align-items:center;
+}
+
+.holding-assets{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.asset-value{
+  width:60px;
+}
+
+.asset-bar{
+  flex:1;
+  height:6px;
+  background:#eee;
+  border-radius:4px;
+  overflow:hidden;
+}
+
+.asset-fill{
+  height:100%;
+  border-radius:4px;
+}
+
+.view-link{
+  text-align:right;
+  padding:16px 24px;
+  color:#2c5aa0;
+  font-size:14px;
+  cursor:pointer;
+}

@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background: #1655a3;
+  min-height: 520px;
+  position: relative;
+  padding-bottom: 130px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-top {
+  background: white;
+  padding: 14px 40px;
+}
+
+.logo-main {
+  Width: 195px;
+  Height: 77px;
+}
+
+
+
+.hero-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 20px 40px;
+  color: #fff;
+}
+
+.tag-row {
+  margin-bottom: 18px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.tag-light {
+  background: #fff;
+  color: #1655a3;
+}
+
+
+.tag-green {
+  width: 115px;
+  height: 35px;
+  text-align: center;
+  background: #77c043;
+  color: #fff;
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 16px;
+  
+}
+.title-second {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 5px;
+}
+
+.hero-title {
+  font-size: 44px;
+  font-weight: 700;
+ 
+}
+
+.invest-btn {
+  padding: 12px 26px;
+  width: 222px;
+  height: 45px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.invest-btn:hover {
+  background: white;
+  color:#1655a3;
+  transition: background 0.6s, color 0.6s;
+}
+
+.fund-card {
+  width: min(1100px, 92%);
+  background: #f3f3f3;
+  border-radius: 16px;
+  padding: 26px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -70px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+.fund-item {
+  color: #222;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.fund-label {
+  font-size: 13px;
+  color: #6f6f6f;
+}
+
+.fund-value {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 6px 0;
+}
+
+.fund-date {
+  font-size: 12px;
+  color: #8a8a8a;
+}
+
+
+@media (max-width: 900px) {
+  .fund-card {
+    grid-template-columns: repeat(2, 1fr);
+    bottom: -120px;
+  }
+  .hero {
+    padding-bottom: 200px;
+  }
+  .hero-title {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 520px) {
+  .fund-card {
+    grid-template-columns: 1fr;
+    bottom: -350px;
+    
+  }
+  .hero {
+    padding-bottom: 320px;
+  }
+  .hero-top {
+    padding: 14px 18px;
+  }
+}
