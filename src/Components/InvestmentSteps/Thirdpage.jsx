@@ -29,28 +29,16 @@ export default function Thirdpage() {
             <Node
               n="02"
               className="n2"
-              text={
-                <>
-                  Select the mutual fund you
-                  <br />
-                  wish to invest in, enter the
-                  <br />
-                  amount you want to invest
-                </>
-              }
+              flip
+              text="Select the mutual fund you wish to invest in, enter the amount you want to invest"
             />
 
             <Node n="03" className="n3" text="Make the payment" />
             <Node
               n="04"
               className="n4"
-              text={
-                <>
-                  Receive a confirmation
-                  <br />
-                  of your investment
-                </>
-              }
+              flip
+              text="Receive a confirmation of your investment"
             />
           </div>
         </div>
@@ -59,13 +47,14 @@ export default function Thirdpage() {
   );
 }
 
-function Node({ n, text, className }) {
+function Node({ n, text, className, flip }) {
   return (
-    <div className={`inv-node ${className}`}>
+    <div className={`inv-node ${className}${flip ? " flip" : ""}`}>
+      {flip && <div className="inv-text inv-text-above">{text}</div>}
       <div className="inv-dot">
         <span className="inv-num">{n}</span>
       </div>
-      <div className="inv-text">{text}</div>
+      {!flip && <div className="inv-text">{text}</div>}
     </div>
   );
 }

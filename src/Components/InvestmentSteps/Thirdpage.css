@@ -83,11 +83,16 @@
   max-width: 220px;
 }
 
+.inv-text-above {
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
 /* node positions (match screenshot) */
-.n1 { left: 10%; top: 50%; }
-.n2 { left: 37%; top: 80%; }
-.n3 { left: 63%; top: 45%; }
-.n4 { left: 88%; top: 72%; }
+.n1 { left: 10%; top: 56%; }
+.n2 { left: 36%; top: 57%; }
+.n3 { left: 63%; top: 48%; }
+.n4 { left: 88%; top: 57%; }
 
 @media (max-width: 900px) {
   .inv-track {
@@ -112,5 +117,14 @@
   .inv-text {
     margin-top: 0;
     max-width: none;
+  }
+
+  .inv-node.flip .inv-dot {
+    order: 1;
+  }
+
+  .inv-node.flip .inv-text-above {
+    order: 2;
+    margin-bottom: 0;
   }
 }
