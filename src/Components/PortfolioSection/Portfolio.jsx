@@ -200,8 +200,28 @@ const current =
 
             <h3>Market Cap Allocations</h3>
 
-            <div className="doughnut-container">
-              <Doughnut data={doughnutData} />
+            <div className="doughnut-wrapper">
+              <div className="doughnut-container">
+                <Doughnut
+                  data={doughnutData}
+                  options={{
+                    cutout: "0%",
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                      legend: {
+                        position: "right",
+                        labels: {
+                          boxWidth: 14,
+                          padding: 16,
+                          font: { size: 13 }
+                        }
+                      }
+                    }
+                  }}
+                />
+              </div>
+              <p className="marketcap-label">Market Cap</p>
             </div>
 
           </div>
